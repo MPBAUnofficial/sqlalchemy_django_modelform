@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AModelForm example</title>
+</head>
+<body>
+
+<form method="POST" action="/insert/{{ engine }}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit">
+</form>
+</body>
+</html>
